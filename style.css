@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  background: #f4f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.timer-display {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.timer-display svg {
+  width: 150px;
+  height: 150px;
+}
+
+#timeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.time-control {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #f63b3b;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: green;
+}
